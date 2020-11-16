@@ -1,0 +1,14 @@
+<h2 style="text-align: center;">How LFSR works?</h2>
+<blockquote>
+<p>Linear-feedback shift register (LFSR) is a shift register whose input bit is a linear function of its previous state.</p>
+<p>The most commonly used linear function of single bits is exclusive-or (XOR). Thus, an LFSR is most often a shift register whose input bit is driven by the XOR of some bits of the overall shift register value.</p>
+<p>The initial value of the LFSR is called the seed, and because the operation of the register is deterministic, the stream of values produced by the register is completely determined by its current (or previous) state. Likewise, because the register has a finite number of possible states, it must eventually enter a repeating cycle. However, an LFSR with a well-chosen feedback function can produce a sequence of bits that appears random and has a very long cycle.</p>
+<p>Applications of LFSRs include generating pseudo-random numbers, pseudo-noise sequences, fast digital counters, and whitening sequences. Both hardware and software implementations of LFSRs are common.</p>
+<p>The mathematics of a cyclic redundancy check, used to provide a quick check against transmission errors, are closely related to those of an LFSR</p>
+<p><span class="tlid-translation translation" lang="en"><span class="" title="">&nbsp;</span></span></p>
+</blockquote>
+<p><strong>Example</strong></p>
+<p>Polynomial: <strong>x^4 + x^2 + 1</strong><strong><br /></strong>Initial state: [1,0,0,1]</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="tableLFSR.png" alt="" width="115" height="215" /></p>
+<p>In first step we have state [1,1,0,0] that is because our polynomial is x^4 + x^2 - we are looking on the third and first bit(from right) and do XOR function with them. So if we have 0 XOR 1 that is 1. We're adding 1 to the left and shift all other bits by one to the right. Next we have again 1 XOR 0 so we doing it again and again...</p>
+<p>&nbsp;</p>

@@ -1,0 +1,8 @@
+<h2 style="text-align: center;">How Geffe Generator works?</h2>
+<blockquote>
+<p>Proposed in 1973 by P.R. Geffe. It uses three LFSR registers nonlinearly related to each other by a multiplexer. The operation of this generator can be described by the formula:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="geffe1.png" alt="Geffe generator" width="465" height="278" /></p>
+<p>&nbsp;</p>
+<p>The linear complexity of this generator is &Lambda; = (L1 + 1) L2 + L1L3 where Li is the length of register i. The period of the output sequence from the generator corresponds to the least common multiple of the three periods of the component generators. At best, it is equal to the product of the periods of the component generators T = T1T2T3 provided that the lengths of the component registers are coprime.</p>
+</blockquote>
+<p>&nbsp;</p>
